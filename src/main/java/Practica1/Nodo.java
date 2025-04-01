@@ -7,6 +7,7 @@ package Practica1;
  */
 public class Nodo<T> {
     private T dato;
+    private Nodo<T> anterior;
     private Nodo<T> siguiente;
 
     /**
@@ -36,6 +37,20 @@ public class Nodo<T> {
     public void setDato(T dato) {
         this.dato = dato;
     }
+
+    public Nodo<T> getAnterior() {
+        return anterior;
+    }
+
+    /**
+     * Establece el nodo anterior en la lista.
+     *
+     * @param anterior el nodo a establecer como anterior.
+     */
+    public void setAnterior(Nodo<T> anterior) {
+        this.anterior = anterior;
+    }
+
 
     /**
      * Obtiene el siguiente nodo en la lista.
